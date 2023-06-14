@@ -1,0 +1,9 @@
+<div class="card mx-auto" style="width: 400px;">
+  <div class="card-body" style="background-color: #9527f5;">
+    <h2 class="card-title text-center">Descripción:</h2>
+    <div *ngIf="post" class="text-center" style="background-color: #42bdbd;">
+      <h3>{{ post.title }}</h3>
+      <p>{{ post.body }}</p>
+    </div>
+  </div>
+</div>

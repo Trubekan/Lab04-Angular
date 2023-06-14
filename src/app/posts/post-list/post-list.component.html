@@ -1,0 +1,12 @@
+<div class="card mx-auto" style="width: 400px;">
+  <div class="card-body" style="background-color: #f52e27;">
+    <h2 class="card-title text-center">Ejercicios para el día de Pectorales</h2>
+    <ul class="list-group">
+      <li class="list-group-item" *ngFor="let post of posts" (click)="onSelectPost(post)" style="background-color: #484de7;">
+        {{ post.title }}
+      </li>
+    </ul>
+  </div>
+</div>
+
+<app-post-details [post]="selectedPost"></app-post-details>

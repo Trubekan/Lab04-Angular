@@ -1,0 +1,10 @@
+<ul class="list-group bg-warning mx-auto" style="max-width: 400px;">
+  <li class="list-group-item" *ngFor="let user of users" style="background-color: #df3131;">
+    <div class="d-flex justify-content-between align-items-center">
+      <span>{{ user.name }}</span>
+      <button class="btn btn-primary" (click)="showDetails(user)">Mostrar detalles</button>
+    </div>
+  </li>
+</ul>
+
+<app-user-details [user]="selectedUser"></app-user-details>
